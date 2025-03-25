@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Detection Extension",
+  "version": "1.0",
+  "description": "Detects malicious URLs using a machine learning API.",
+  "permissions": ["webRequest", "webRequestBlocking", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
